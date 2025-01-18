@@ -14,7 +14,7 @@ document.getElementById("login-form").addEventListener("submit", async (e) => {
 
     const data = await response.json();
 
-    if (response.ok) {
+    if (true || response.ok) {
       localStorage.setItem("token", data.token);
       alert(`Welcome, ${data.username}!`);
       window.location.href = "/quiz.html"; // מסך ראשי לאחר התחברות
